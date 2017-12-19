@@ -1,275 +1,172 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta tags for responsivness and browser compatiblity -->
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+			<title>Learning Academy</title>
+			<!-- main css file for the styling -->
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			</head>
+			<body>
+				<!-- I have created two navbars, one for mobile which is the default and one for larger screen sizes -->
+				<div class="navbar1">
+					<div class="dropdown-menu">
+						<div class="dropdown-button" onclick="myFunction()"></div>
+						<div id="my-navbar" class="dropdown-content">
+							<a href="#home-section">HOME</a>
+							<a href="#section-a">ABOUT</a>
+							<a href="#section-b">COURSES</a>
+							<a href="#section-d">CONTACT</a>
+						</div>
+					</div>
+				</div>
+				<nav class="navbar2">
+					<ul class="navbar2">
+						<li>
+							<a href="#home-section">HOME</a>
+						</li>
+						<li>
+							<a href="#section-a">ABOUT</a>
+						</li>
+						<li>
+							<a href="#section-b">COURSES</a>
+						</li>
+						<li>
+							<a href="#section-d">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- back to top button used to send the user back to the top of the page -->
+				<div class="toTop">
+					<a id="top" href="#showcase">Back To Top</a>
+				</div>
+				<!-- main content starts here -->
+					<!-- slideshow content starts here -->
+					<section id ="home-section" class="slideShow">
+						<header id="showcase" class="grid">
+							<div class="content-wrap">
+								<h1>Learning Academy</h1>
+								<h2>Our last session sold out fast. Reserve your seat TODAY!</h2>
+								<a href="#section-a" class="btn">Read More</a>
+							</div>
+						</header>
+						<div class="layer1"></div>
+						<div class="layer2"></div>
+						<div class="layer3"></div>
+						<div class="layer4"></div>
+						<div class="layer5"></div>
+					</section>
+					<!-- section a starts here -->
+					<main id="main">
+						<section id="section-a" class="grid">
+							<div class="content-wrap">
+								<h2 class="content-title">What We Do</h2>
+								<div class="content-text">
+									<p>Due to overwhelming demand, we have created course packages for Contractors, Business owners and for people who are looking to up skill and get themselves into Business Analysis or Project Management.</p>
+									<p>We have leading experts on board with over 30 years combined insurance, finance, business analysis and compliance experience.
+									We are now holding seminars across the country to be able to cater for professionals across the UK. We will coach you and mentor you to become a Business Analyst or Project Manager, 
+									we will place you on projects to gain experience and give you one to one support to develop your skill set. We even offer post job support in order to ensure there is a smooth transition from beginner level to advanced.</p>
+									<h3>How the projects work?</h3>
+									<p>We have ongoing projects, where you are guaranteed a placement on the project as an intern in order to be able to apply the theory in practice.</p>
+									<a href="#section-c" class="btn">Why Train With Us?</a>
+								</div>
+							</div>
+						</section>
+						<!-- section b starts here -->
+						<section id="section-b" class="grid">
+							<div class="content-wrap">
+								<h2 class="content-title">Courses</h2>
+								<ul>
+									<li>
+										<div class="card">
+											<img src="img/background5.jpeg" alt="">
+												<div class="card-content">
+													<h3 class="card-title">GDPR Seminar</h3>
+													<p>This 2-Day Fast Track EU General Data Protection Regulation (GDPR) 
+													course has been designed to help you learn all the EU GDPR principles and fundamentals, in order to ensure you are fully compliant.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="card">
+												<img src="img/background4.jpeg" alt="">
+													<div class="card-content">
+														<h3 class="card-title">Financial Crime - AML/KYC</h3>
+														<p>Anti-Money Laundering (AML) and Know Your Customer (KYC) professionals are in demand as organisations increase their focus on risk prevention.</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="card">
+													<img src="img/background7.jpeg" alt="">
+														<div class="card-content">
+															<h3 class="card-title">Business Analysis Training</h3>
+															<p>This BCS Foundation Certificate in Business Analysis course teaches trainees to be able to identify issues in systems, 
+															develop effective business strategies, and manage stakeholders.</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</section>
+									<!-- section c starts here -->
+									<section id="section-c" class="grid">
+										<div class="content-wrap">
+											<h2 class="content-title">Why Train With Us?</h2>
+											<p>
+											Our in-house training solutions allow you to choose any classroom course of your choice, delivered at a venue of your choice, and by any 
+											method of your choice - offering you the ultimate convenience and value for money. Our onsite courses save you money by training multiple employees 
+											at once, meaning that you can reduce the travel expenses associated with public courses.</p>
+											<p>Our in-house training can be tailored to your business’s requirements - ensuring premium quality, 
+											applicability, and value for money. Onsite training puts you in control of your employees and allows you to monitor what 
+											they are learning during their training.</p>
+											<p>Business-specific additions can be added to make your organisation more efficient, streamlined, and more profitable. 
+											We design and develop our courses, and can adapt to your needs. We are the market leaders of on-site 
+											and in-house training with over 10 years' market experience of delivering tailored and quality courses to our valued customers.</p>
+										</div>
+									</section>
+									<!-- section d ( contact page )starts here -->
+									<section id="section-d" class="grid">
+										<div class="box">
+											<h2 class="content-title">Contact Us</h2>
+											<div id="panel">
+												<div class="con-form">
+													<form action="#" id="form" method="post" name="form">
+														<input name="client" placeholder="Your First Name" type="text" value="" title="Firstname">
+															<input name="client" placeholder="Your Last Name" type="text" value="" title="Lastname">
+																<input name="phone" placeholder="Your Phone Number" type="tel" value="" required>
+																	<input name="email" placeholder="Your Email" type="email" value="" required>
+																		<textarea name="comment" placeholder="Your Message Here..." id="comment"></textarea>
+																		<input class="o-btn" type="Submit" value="Submit">
+																		</form>
+																	</div>
+																</div>
+															</div>
+															<div class="box">
+																<h2 class="content-title">In-House Training</h2>
+																<p>Learning Academy is a National training provider delivering professional training courses in many locations across the country. 
+																We are driven to coach and mentor candidates, irrespective of their background, to become well respected Business Analysts.</p>
+																<p>We are exceedingly passionate about what we do and continuously strive to provide outstanding quality and value for our clients.
+																We coach you, we place you on projects, we guide you through your job application process and we mentor you on the job.
+																Learning Academy, is run by well respected industry experts with over 30 years of experience combined of 
+																training delivery with FTSE 500 companies.</p>
+															</div>
+														</section>
+													</main>
+													<!-- footer of the page is here -->
+													<footer id="main-footer" class="grid">
+														<div>Copyright &copy; 2017 Learning Academy</div>
+														<div>Powered By 
+															<a href="https://github.com/rameezsajid/CTEC3905_P15224656" target="_blank">Rameez Sajid</a>
+														</div>
+													</footer>
+				<!-- two scripts used, one is used for giving a scrolling effect when clicking on a link in the navbar -->
+				<!-- and the other is used for showing and hidding navbar1 -->
+				<script src="js/script.js"></script>
+				<script src="js/scroll.js"></script>
+			</body>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<title>Beaute Factory</title>
-	<link rel="stylesheet" href="css/main.css">
-	
-
-  <!-- Enable responsive view on mobile devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  	
-	<meta charset="utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/lightbox.css" type="text/css" />
-
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-	
-	<link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
-
-
-</head>
-
-<body>
-
-<!-- This is the navigation bar -->
-<nav class="responsiveMenu">
-  <ul class="responsiveMenu">
-    <li><a id="home" href="#homeSection">HOME</a></li>
-    <li><a id="about" href="#aboutSection">ABOUT</a></li>
-    <li><a id="gallery" href="#gallerySection">GALLERY</a></li>
-    <li><a id="services" href="#servicesSection">SERVICES</a></li>
-    <li><a id="contact" href="#contactSection">CONTACT</a></li>  
-  </ul>
-  <a href="#" id="pull">MENU</a>
-</nav>
-
-
-
-<div id = "homeSection" class="slideShow">
-    <div class="layer1"></div>
-    <div class="layer2"></div>
-    <div class="layer3"></div>
-    <div class="layer4"></div>
-	<div class="layer5"></div>
-</div>
-
-
-
-<div id="aboutSection" class="aboutClass">
-
-		<div id="MBBF" class="MBBFClass">
-		<h1>Beautè Factory</h1>
-		
-		</div>
-		
-		<div id ="Content" class="contentClass">
-		
-		<h2>About</h2></br>
-		
-				<p>Zarmeenah is a self taught Creative/ Bridal Hair and Makeup 
-				Artist, based in the Midlands, UK. She 
-				has undergone hair training with Asiana bridal and is always striving 
-				to keep up with  the latest trends in the beauty industry. 
-				Having studied Art and Design, she has a keen eye for detail and is 
-				always coming up with innovative ideas and looks.</p>
-				<p><i>"I love what I do, making women look and feel beautiful on 
-				their special day! I ensure I listen to my clients' 
-				requirements as well as give my own input and advice; to make 
-				sure my clients are satisfied with the outcome. 
-				Professionalism is vital  to me, hence I try my level best to 
-				cater my clients every need. Have the passion and the 
-				impossible will happen."</i> </br></br> </p>
-		
-		</div>
-			
-	
-		
-	</div>
-
-
-</div>
-
-<div id="gallerySection" class="galleryClass">
-
-		
-</div>
-
-<div id="servicesSection" class="servicesClass">
-
-	<!-- <div class="mainContent">
-		<div class="content">
-			<article class="topContent2">
-				<header>
-					<h1>Services</h1></br>
-				</header>
-
-				<content>
-				<p>Here are the services Beaute Factory provides:
-				</br> Makeup - Bridal Makeup: &pound140 | Party Makeup: &pound40 | Engagement Makeup: &pound100 | Mehndi Makeup: &pound90.
-				</p>
-				<p>Hair - Bridal Hair: &pound130 | Party Hair: &pound40 | Mehndi Hair : &pound80</p>
-				<p>Packages - Bridal package: &pound250</br>
-				( makeup, hair, luxury lashes, hair padding/ accessories, dupatta and jewellery setting)</p>
-				<p>Party  package: &pound65 - ( makeup and hair/ hair paddings and eyelashes) </p>
-				<p>Mehndi package: &pound175 - ( makeup/ hair, hair extensions and paddings/ eyelashes/ dupatta and jewellery setting)</p>
-				<p>Mehndi</br>
-				Bridal mehndi: &pound75 - &pound150 </br>
-				Party mehndi: &pound35 - &pound50</p>
-				</p>
-				</content>
-			
-			</article>
-	
-		</div>
-	
-	</div>
-				<header>
-					<h1>Services</h1></br>
-				</header>
-	
-	<div class="grid">
-	
-				
-			<div class="grid-item">
-				<img src="img/img2smaller.png">
-
-				<hr>
-
-				<p>
-          In quis quam feugiat, mollis eros quis, fringilla eros. Duis suscipit a mi sit amet sagittis. Curabitur eu mollis risus. Aliquam lacus eros, faucibus sed imperdiet eget, scelerisque id velit. Vivamus tellus urna, venenatis sit amet erat a, pulvinar tempus urna. Nunc finibus ante eget nunc eleifend mollis.
-					
-				</p>
-			</div>
-
-			<div class="grid-item">
-				<img src="img/img12smaller.png">
-
-				<hr>
-
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt tellus a sem scelerisque vestibulum in eu lacus. Vivamus vitae eros augue.
-				</p>
-			</div>
-
-			<div class="grid-item">
-				<img src="img/img3smaller.png">
-
-				<hr>
-
-				<p>
-					 Aenean est eros, auctor ac elementum id, laoreet eu sapien.
-				</p>
-			</div>
-
-			<div class="grid-item">
-				<img src="img/img112smaller.png">
-
-				<hr>
-
-				<p>
-					 Donec elementum lacus at neque imperdiet blandit. Morbi feugiat odio id nulla bibendum sodales. Integer eros elit, volutpat id aliquet et, commodo ut odio.
-				</p>
-			</div>
-
-			
-		</div> -->
-	
-	<div class="buttons">
-  <div class="butFrame"><img src="img/img2service.png">
-    <div class="butHeading">Bridal</div>
-    <div class="butText">
-      <p>Bridal Makeup </br>Engagement Makeup </br>Bridal Hair </br> 
-	  Bridal package 
-				(makeup, hair, luxury lashes, hair padding/ accessories, dupatta and jewellery setting)</p>
-    </div>
-  </div>
-  <div class="butFrame"><img src="img/img113service.png">
-    <div class="butHeading">Mehndi</div>
-    <div class="butText">
-      <p> Mehndi Makeup </br>Mehndi Hair </br> Mehndi package - (makeup/ hair, hair extensions and paddings/ eyelashes/ dupatta and jewellery setting)
-				</br>Henna Mehndi - Full Arms, Hands and Feet </p>
-    </div>
-  </div>
-  <div class="butFrame"><img src="img/img4service.png">
-    <div class="butHeading">Party</div>
-    <div class="butText">
-      <p> Party Makeup </br>Party Hair </br>Party  package - (makeup and hair/ hair paddings and eyelashes) </p>
-    </div>
-  </div>
-</div>
-		
-</div>
-
-
-		
-<!--
-<div id="footerSection" class="footerClass">
-
-
-		<p>Copyright &copy; 2017 Beautè Factory</p>
-		<p>Powered By IntrovertTech</p>
-
-		
-		<a href="https://www.instagram.com/makeupbybeautefactory" title="Follow Makeup By Beaute Factory on Instagram">
-              <img src="img/instaIcon.png" border=0>
-        </a>
-        
-		<a href="https://www.facebook.com/Beaut%C3%A8-Factory-573501609512792/?fref=ts" title="Add Makeup By Beaute Factory on Facebook">
-              <img src="img/facebookIcon.png" border=0>
-        </a> 
-        
-
-
-</div> -->
-
-
-<footer class= "contactClass" id="contactSection">
-    <div class="row">
-      <div class="twelve columns">
-        <div id="flip" class="f-btn"><span>Contact Me &raquo;</span></div>
-
-        <ul id="foot-social">
-          <li>
-            <a href="https://www.facebook.com/codreev" title="Facebook">
-              <svg id="icon-facebook" viewBox="0 0 1024 1024">
-                <path class="path1" d="M870.4 51.2h-716.8c-56.32 0-102.4 46.080-102.4 102.4v716.8c0 56.371 46.080 102.4 102.4 102.4h358.4v-358.4h-102.4v-126.72h102.4v-104.96c0-110.797 62.054-188.621 192.819-188.621l92.314 0.102v133.376h-61.286c-50.893 0-70.246 38.195-70.246 73.626v86.528h131.482l-29.082 126.669h-102.4v358.4h204.8c56.32 0 102.4-46.029 102.4-102.4v-716.8c0-56.32-46.080-102.4-102.4-102.4z"></path>
-              </svg>
-            </a>
-          </li>
-         
-          
-          <li>
-            <a href="https://instagram.com/makeupbybeautefactory/" title="Instagram">
-              <svg id="icon-instagram" viewBox="0 0 1024 1024">
-                <path class="path1" d="M870.4 51.2h-716.8c-56.32 0-102.4 46.080-102.4 102.4v716.8c0 56.371 46.080 102.4 102.4 102.4h716.8c56.32 0 102.4-46.029 102.4-102.4v-716.8c0-56.32-46.080-102.4-102.4-102.4zM511.181 794.778c156.621 0 283.546-127.027 283.546-283.597 0-17.306-2.202-33.997-5.274-50.381h80.947v369.459c0 19.558-15.872 35.328-35.482 35.328h-645.837c-19.61 0-35.482-15.77-35.482-35.328v-369.459h79.309c-3.123 16.384-5.325 33.075-5.325 50.381 0 156.621 127.027 283.597 283.597 283.597zM333.978 511.181c0-97.894 79.36-177.203 177.254-177.203 97.843 0 177.254 79.309 177.254 177.203s-79.411 177.254-177.254 177.254c-97.946 0-177.254-79.36-177.254-177.254zM834.918 307.2h-82.688c-19.558 0-35.43-15.974-35.43-35.43v-82.79c0-19.558 15.872-35.379 35.379-35.379h82.688c19.661 0 35.533 15.821 35.533 35.379v82.739c0 19.507-15.872 35.482-35.482 35.482z"></path>
-              </svg>
-            </a>
-          </li>
-          
-
-        </ul>
-        <br>
-        <div id="panel">
-          <p>Please contact me for any questions, comments or inquiries.</p>
-          <div class="con-form">
-            <form action="contact.php" id="form" method="post" name="form">
-              <input name="client" placeholder="Your Name" type="text" value="" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
-
-              <input name="email" placeholder="Your Email" type="email" value="" required>
-              <textarea name="comment" placeholder="Your Comments Here..." id="comment"></textarea>
-              <input class="o-btn" type="Submit" value="Submit">
-
-            </form>
-          </div>
-        </div>
-  </footer>
-
-
-<script src="js/contactForm.js"></script>
-<script src="js/pullScript.js"></script>
-<script src="js/scriptTwo.js"></script>
-<script src="lib/jquery-3.1.1.min.js"></script>
-
-
-</body>
 
 </html>
